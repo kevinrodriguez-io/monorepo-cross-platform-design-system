@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "outDir": "./dist",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "target": "ES5"
+  },
+  "include": [
+    "index.ts",
+  ]
+}
