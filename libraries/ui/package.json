@@ -6,19 +6,22 @@
     "name": "Kevin Rodriguez",
     "email": "kevinrodriguez@boltsource.io"
   },
-  "module": "dist/index.js",
-  "main": "dist/cjs/index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc --build"
   },
   "peerDependencies": {
     "react": "~16.11.0",
     "react-native-web": "^0.13.5"
   },
   "devDependencies": {
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.46",
     "react": "~16.11.0",
-    "@types/react": "^16.9.45",
-    "react-native-web": "^0.13.5",
     "typescript": "~3.9.5"
   }
 }

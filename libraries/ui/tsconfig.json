@@ -1,13 +1,15 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "jsx": "react",
-    "outDir": "./dist",
+    "outDir": "dist",
     "module": "CommonJS",
-    "esModuleInterop": true,
-    "target": "ES5"
+    "jsx": "react",
+    "sourceMap": true,
+    "declaration": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": [
-    "index.ts",
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
